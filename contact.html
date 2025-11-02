@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Rajib Gandhi Academy</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <div class="logo-icon">🎓</div>
+                <span>Rajib Gandhi Academy</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="classes.html">Classes</a></li>
+                <li><a href="notes.html">Notes</a></li>
+                <li><a href="students.html">Students</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="admissions.html">Admissions</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="hero" style="padding: 3rem 2rem;">
+        <div class="hero-content">
+            <h1>Contact Us</h1>
+            <p>Get in touch with us for any queries or information</p>
+        </div>
+    </section>
+
+    <!-- Contact Information & Form -->
+    <section>
+        <div class="container">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                
+                <!-- Contact Information -->
+                <div class="card">
+                    <h2 style="color: var(--primary-color); margin-bottom: 1.5rem;">Get In Touch</h2>
+                    
+                    <div style="margin-bottom: 2rem;">
+                        <div style="display: flex; align-items: flex-start; gap: 1rem; margin-bottom: 1.5rem;">
+                            <div style="font-size: 2rem; color: var(--secondary-color);">📍</div>
+                            <div>
+                                <h4 style="color: var(--primary-color); margin-bottom: 0.3rem;">Address</h4>
+                                <p style="color: var(--light-text); line-height: 1.6;">
+                                    Rajib Gandhi Academy<br>
+                                    123 Education Street<br>
+                                    City, State - 123456<br>
+                                    India
+                                </p>
+                            </div>
+                        </div>
+
+                        <div style="display: flex; align-items: flex-start; gap: 1rem; margin-bottom: 1.5rem;">
+                            <div style="font-size: 2rem; color: var(--secondary-color);">📞</div>
+                            <div>
+                                <h4 style="color: var(--primary-color); margin-bottom: 0.3rem;">Phone</h4>
+                                <p style="color: var(--light-text);">+91 123-456-7890</p>
+                                <p style="color: var(--light-text);">+91 098-765-4321</p>
+                            </div>
+                        </div>
+
+                        <div style="display: flex; align-items: flex-start; gap: 1rem; margin-bottom: 1.5rem;">
+                            <div style="font-size: 2rem; color: var(--secondary-color);">📧</div>
+                            <div>
+                                <h4 style="color: var(--primary-color); margin-bottom: 0.3rem;">Email</h4>
+                                <p style="color: var(--light-text);">info@rajibgandhiacademy.edu</p>
+                                <p style="color: var(--light-text);">admissions@rajibgandhiacademy.edu</p>
+                            </div>
+                        </div>
+
+                        <div style="display: flex; align-items: flex-start; gap: 1rem;">
+                            <div style="font-size: 2rem; color: var(--secondary-color);">🕒</div>
+                            <div>
+                                <h4 style="color: var(--primary-color); margin-bottom: 0.3rem;">Office Hours</h4>
+                                <p style="color: var(--light-text);">Monday - Friday: 9:00 AM - 5:00 PM</p>
+                                <p style="color: var(--light-text);">Saturday: 9:00 AM - 1:00 PM</p>
+                                <p style="color: var(--light-text);">Sunday: Closed</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="background-color: var(--light-bg); padding: 1rem; border-radius: var(--border-radius);">
+                        <h4 style="color: var(--primary-color); margin-bottom: 0.5rem;">Quick Tips</h4>
+                        <ul style="margin: 0; padding-left: 1.5rem; color: var(--light-text); line-height: 1.8;">
+                            <li>For admission queries, please call during office hours</li>
+                            <li>Email responses within 24-48 hours</li>
+                            <li>Visit us for campus tours (by appointment)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="card">
+                    <h2 style="color: var(--primary-color); margin-bottom: 1.5rem;">Send Us a Message</h2>
+                    
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="contactName">Your Name *</label>
+                            <input type="text" id="contactName" name="contactName" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactEmail">Your Email *</label>
+                            <input type="email" id="contactEmail" name="contactEmail" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactPhone">Phone Number</label>
+                            <input type="tel" id="contactPhone" name="contactPhone" pattern="[0-9]{10}" placeholder="10-digit mobile number">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactSubject">Subject *</label>
+                            <select id="contactSubject" name="contactSubject" required>
+                                <option value="">-- Select Subject --</option>
+                                <option value="admission">Admission Inquiry</option>
+                                <option value="academic">Academic Information</option>
+                                <option value="facilities">Facilities</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactMessage">Message *</label>
+                            <textarea id="contactMessage" name="contactMessage" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" style="width: 100%; padding: 1rem;">
+                            Send Message
+                        </button>
+
+                        <p style="margin-top: 1rem; text-align: center; color: var(--light-text); font-size: 0.9rem;">
+                            * Required fields
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section style="background-color: var(--white);">
+        <div class="container">
+            <h2 class="section-title">Find Us</h2>
+            <div class="card">
+                <div style="width: 100%; height: 450px; background: linear-gradient(135deg, #e0e0e0, #f5f5f5); border-radius: var(--border-radius); display: flex; align-items: center; justify-content: center; color: var(--light-text);">
+                    <div style="text-align: center;">
+                        <div style="font-size: 5rem; margin-bottom: 1rem;">🗺️</div>
+                        <h3 style="color: var(--primary-color); margin-bottom: 1rem;">Rajib Gandhi Academy Location</h3>
+                        <p style="font-size: 1.1rem;">123 Education Street, City - 123456</p>
+                        <p style="margin-top: 1rem;">Map Placeholder - Integrate Google Maps here</p>
+                        <button class="btn btn-primary" style="margin-top: 1rem;" onclick="window.open('https://maps.google.com', '_blank')">
+                            Open in Google Maps
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section>
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div style="max-width: 900px; margin: 0 auto;">
+                <div class="card" style="margin-bottom: 1rem;">
+                    <h3 style="color: var(--primary-color); margin-bottom: 0.5rem;">What are the admission requirements?</h3>
+                    <p style="color: var(--light-text); line-height: 1.6;">
+                        Students applying for admission must have passed the previous class with a minimum of 50% marks. 
+                        Transfer certificates and mark sheets from the previous school are required.
+                    </p>
+                </div>
+
+                <div class="card" style="margin-bottom: 1rem;">
+                    <h3 style="color: var(--primary-color); margin-bottom: 0.5rem;">Do you offer transportation facilities?</h3>
+                    <p style="color: var(--light-text); line-height: 1.6;">
+                        Yes, we provide transportation services covering major areas of the city. Please contact our 
+                        office for route details and availability.
+                    </p>
+                </div>
+
+                <div class="card" style="margin-bottom: 1rem;">
+                    <h3 style="color: var(--primary-color); margin-bottom: 0.5rem;">What is the fee structure?</h3>
+                    <p style="color: var(--light-text); line-height: 1.6;">
+                        Fee structure varies by class and facilities. Please visit our office or contact our admission 
+                        department for detailed fee information.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3 style="color: var(--primary-color); margin-bottom: 0.5rem;">Can I schedule a campus tour?</h3>
+                    <p style="color: var(--light-text); line-height: 1.6;">
+                        Yes, campus tours are available by appointment. Please call us or fill out the contact form 
+                        to schedule your visit.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Rajib Gandhi Academy</h3>
+                <p>Providing quality education for classes 9-12 with a focus on holistic development and academic excellence.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="classes.html">Classes</a></li>
+                    <li><a href="admissions.html">Admissions</a></li>
+                    <li><a href="events.html">Events</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="notes.html">Study Notes</a></li>
+                    <li><a href="students.html">Student Portal</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p>📧 info@rajibgandhiacademy.edu</p>
+                <p>📞 +91 123-456-7890</p>
+                <p>📍 123 Education Street, City</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Rajib Gandhi Academy. All Rights Reserved. | Design by Abdul Azim</p>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

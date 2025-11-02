@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rajib Gandhi Academy - Classes 9-12</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <div class="logo-icon">🎓</div>
+                <span>Rajib Gandhi Academy</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="classes.html">Classes</a></li>
+                <li><a href="notes.html">Notes</a></li>
+                <li><a href="students.html">Students</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="admissions.html">Admissions</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Rajib Gandhi Academy</h1>
+            <p>Excellence in Education for Classes 9-12 | Empowering Future Leaders</p>
+            <div class="hero-buttons">
+                <a href="classes.html" class="btn btn-primary">Explore Classes</a>
+                <a href="contact.html" class="btn btn-secondary">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Access Section -->
+    <section style="background-color: var(--light-bg); padding: 4rem 0;">
+        <div class="container">
+            <h2 class="section-title">Quick Access</h2>
+            <p style="text-align: center; color: var(--light-text); margin-bottom: 3rem; font-size: 1.1rem;">
+                Explore our academic resources and portals
+            </p>
+            <div class="cards-grid">
+                <a href="classes.html" class="card" style="text-decoration: none; transition: var(--transition);">
+                    <div style="font-size: 3.5rem; text-align: center; margin-bottom: 1rem;">📖</div>
+                    <h3 style="text-align: center; color: var(--primary-color);">Classes</h3>
+                    <p style="text-align: center; color: var(--light-text);">View all class information, subjects, teachers and curriculum for grades 9-12</p>
+                    <div style="text-align: center; margin-top: 1rem;">
+                        <span class="btn btn-primary" style="display: inline-block; padding: 0.7rem 1.5rem; font-size: 0.95rem;">View Classes →</span>
+                    </div>
+                </a>
+                
+                <a href="notes.html" class="card" style="text-decoration: none; transition: var(--transition);">
+                    <div style="font-size: 3.5rem; text-align: center; margin-bottom: 1rem;">📝</div>
+                    <h3 style="text-align: center; color: var(--primary-color);">Notes</h3>
+                    <p style="text-align: center; color: var(--light-text);">Access study materials, notes and resources for all subjects</p>
+                    <div style="text-align: center; margin-top: 1rem;">
+                        <span class="btn btn-primary" style="display: inline-block; padding: 0.7rem 1.5rem; font-size: 0.95rem;">Browse Notes →</span>
+                    </div>
+                </a>
+                
+                <a href="students.html" class="card" style="text-decoration: none; transition: var(--transition);">
+                    <div style="font-size: 3.5rem; text-align: center; margin-bottom: 1rem;">👥</div>
+                    <h3 style="text-align: center; color: var(--primary-color);">Students</h3>
+                    <p style="text-align: center; color: var(--light-text);">View student directory and search by name, class or section</p>
+                    <div style="text-align: center; margin-top: 1rem;">
+                        <span class="btn btn-primary" style="display: inline-block; padding: 0.7rem 1.5rem; font-size: 0.95rem;">View Students →</span>
+                    </div>
+                </a>
+                
+                <a href="events.html" class="card" style="text-decoration: none; transition: var(--transition);">
+                    <div style="font-size: 3.5rem; text-align: center; margin-bottom: 1rem;">🎉</div>
+                    <h3 style="text-align: center; color: var(--primary-color);">Events</h3>
+                    <p style="text-align: center; color: var(--light-text);">Stay updated with upcoming events, activities and school calendar</p>
+                    <div style="text-align: center; margin-top: 1rem;">
+                        <span class="btn btn-primary" style="display: inline-block; padding: 0.7rem 1.5rem; font-size: 0.95rem;">View Events →</span>
+                    </div>
+                </a>
+                
+                <a href="admissions.html" class="card" style="text-decoration: none; transition: var(--transition);">
+                    <div style="font-size: 3.5rem; text-align: center; margin-bottom: 1rem;">📋</div>
+                    <h3 style="text-align: center; color: var(--primary-color);">Admissions</h3>
+                    <p style="text-align: center; color: var(--light-text);">Apply for admission and join our academic excellence program</p>
+                    <div style="text-align: center; margin-top: 1rem;">
+                        <span class="btn btn-primary" style="display: inline-block; padding: 0.7rem 1.5rem; font-size: 0.95rem;">Apply Now →</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest Notices Section -->
+    <section>
+        <div class="container">
+            <h2 class="section-title">Latest Notices & Events</h2>
+            <div class="notice-board" id="noticeBoard">
+                <div class="loading">
+                    <div class="spinner"></div>
+                    <p>Loading events...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Stats Section -->
+    <section style="background-color: var(--white);">
+        <div class="container">
+            <h2 class="section-title">Why Choose Us</h2>
+            <div class="cards-grid">
+                <div class="card text-center">
+                    <div style="font-size: 3rem; color: var(--secondary-color); margin-bottom: 1rem;">👨‍🎓</div>
+                    <h3>Experienced Faculty</h3>
+                    <p>Learn from highly qualified and experienced teachers dedicated to your success</p>
+                </div>
+                <div class="card text-center">
+                    <div style="font-size: 3rem; color: var(--secondary-color); margin-bottom: 1rem;">📚</div>
+                    <h3>Comprehensive Curriculum</h3>
+                    <p>Well-structured syllabus covering all subjects for classes 9-12</p>
+                </div>
+                <div class="card text-center">
+                    <div style="font-size: 3rem; color: var(--secondary-color); margin-bottom: 1rem;">🏆</div>
+                    <h3>Outstanding Results</h3>
+                    <p>Consistent track record of excellent board examination results</p>
+                </div>
+                <div class="card text-center">
+                    <div style="font-size: 3rem; color: var(--secondary-color); margin-bottom: 1rem;">💻</div>
+                    <h3>Modern Facilities</h3>
+                    <p>State-of-the-art labs, library, and digital learning resources</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Rajib Gandhi Academy</h3>
+                <p>Providing quality education for classes 9-12 with a focus on holistic development and academic excellence.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="classes.html">Classes</a></li>
+                    <li><a href="admissions.html">Admissions</a></li>
+                    <li><a href="events.html">Events</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="notes.html">Study Notes</a></li>
+                    <li><a href="students.html">Student Portal</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p>📧 info@rajibgandhiacademy.edu</p>
+                <p>📞 +91 123-456-7890</p>
+                <p>📍 123 Education Street, City</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Rajib Gandhi Academy. All Rights Reserved. | Design by Abdul Azim</p>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

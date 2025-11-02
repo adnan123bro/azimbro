@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - Rajib Gandhi Academy</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <div class="logo-icon">🎓</div>
+                <span>Rajib Gandhi Academy</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="classes.html">Classes</a></li>
+                <li><a href="notes.html">Notes</a></li>
+                <li><a href="students.html">Students</a></li>
+                <li><a href="events.html" class="active">Events</a></li>
+                <li><a href="admissions.html">Admissions</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="hero" style="padding: 3rem 2rem;">
+        <div class="hero-content">
+            <h1>School Events</h1>
+            <p>Stay updated with our upcoming and past events</p>
+        </div>
+    </section>
+
+    <!-- Filters -->
+    <section>
+        <div class="container">
+            <div class="filters">
+                <div class="filter-group">
+                    <label for="eventTypeFilter">Filter by Type</label>
+                    <select id="eventTypeFilter">
+                        <option value="all">All Events</option>
+                        <option value="upcoming">Upcoming Events</option>
+                        <option value="past">Past Events</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="searchEvents">Search Events</label>
+                    <input type="text" id="searchEvents" placeholder="Search by title...">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Content -->
+    <section>
+        <div class="container">
+            <div id="eventsContainer">
+                <div class="loading">
+                    <div class="spinner"></div>
+                    <p>Loading events...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Modal -->
+    <div id="eventModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modalTitle">Event Details</h3>
+                <span class="close-modal" id="closeModal">&times;</span>
+            </div>
+            <div class="modal-body" id="modalBody">
+                <!-- Event details will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Rajib Gandhi Academy</h3>
+                <p>Providing quality education for classes 9-12 with a focus on holistic development and academic excellence.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="classes.html">Classes</a></li>
+                    <li><a href="admissions.html">Admissions</a></li>
+                    <li><a href="events.html">Events</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="notes.html">Study Notes</a></li>
+                    <li><a href="students.html">Student Portal</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p>📧 info@rajibgandhiacademy.edu</p>
+                <p>📞 +91 123-456-7890</p>
+                <p>📍 123 Education Street, City</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Rajib Gandhi Academy. All Rights Reserved. | Design by Abdul Azim</p>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

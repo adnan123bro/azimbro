@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admissions - Rajib Gandhi Academy</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <div class="logo-icon">🎓</div>
+                <span>Rajib Gandhi Academy</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="classes.html">Classes</a></li>
+                <li><a href="notes.html">Notes</a></li>
+                <li><a href="students.html">Students</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="admissions.html" class="active">Admissions</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="hero" style="padding: 3rem 2rem;">
+        <div class="hero-content">
+            <h1>Admissions Open</h1>
+            <p>Join Rajib Gandhi Academy for Academic Excellence</p>
+        </div>
+    </section>
+
+    <!-- Admission Info -->
+    <section>
+        <div class="container">
+            <div class="card">
+                <h2 style="color: var(--primary-color); margin-bottom: 1rem; text-align: center;">Admission Information</h2>
+                <p style="text-align: center; line-height: 1.8; color: var(--dark-text); margin-bottom: 2rem;">
+                    We are accepting applications for Classes 9-12 for the academic year 2024-25. 
+                    Fill out the form below to submit your application. You will receive an Application ID 
+                    immediately upon submission.
+                </p>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 2rem;">
+                    <div style="text-align: center; padding: 1rem; background-color: var(--light-bg); border-radius: var(--border-radius);">
+                        <div style="font-size: 2rem; margin-bottom: 0.5rem;">📚</div>
+                        <h4 style="color: var(--primary-color);">Classes 9-12</h4>
+                        <p style="color: var(--light-text); font-size: 0.9rem;">All streams available</p>
+                    </div>
+                    <div style="text-align: center; padding: 1rem; background-color: var(--light-bg); border-radius: var(--border-radius);">
+                        <div style="font-size: 2rem; margin-bottom: 0.5rem;">✍️</div>
+                        <h4 style="color: var(--primary-color);">Simple Process</h4>
+                        <p style="color: var(--light-text); font-size: 0.9rem;">Quick online application</p>
+                    </div>
+                    <div style="text-align: center; padding: 1rem; background-color: var(--light-bg); border-radius: var(--border-radius);">
+                        <div style="font-size: 2rem; margin-bottom: 0.5rem;">🎓</div>
+                        <h4 style="color: var(--primary-color);">Quality Education</h4>
+                        <p style="color: var(--light-text); font-size: 0.9rem;">Experienced faculty</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Admission Form -->
+    <section style="background-color: var(--white);">
+        <div class="container">
+            <h2 class="section-title">Application Form</h2>
+            
+            <div class="card" style="max-width: 800px; margin: 0 auto;">
+                <form id="admissionForm">
+                    <!-- Student Information -->
+                    <h3 style="color: var(--primary-color); margin-bottom: 1.5rem; border-bottom: 2px solid var(--light-bg); padding-bottom: 0.5rem;">
+                        Student Information
+                    </h3>
+
+                    <div class="form-group">
+                        <label for="studentName">Student Name *</label>
+                        <input type="text" id="studentName" name="studentName" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="dob">Date of Birth *</label>
+                        <input type="date" id="dob" name="dob" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="classApplying">Class Applying For *</label>
+                        <select id="classApplying" name="classApplying" required>
+                            <option value="">-- Select Class --</option>
+                            <option value="9">Class 9</option>
+                            <option value="10">Class 10</option>
+                            <option value="11">Class 11 (Science)</option>
+                            <option value="11-commerce">Class 11 (Commerce)</option>
+                            <option value="11-arts">Class 11 (Arts)</option>
+                            <option value="12">Class 12 (Science)</option>
+                            <option value="12-commerce">Class 12 (Commerce)</option>
+                            <option value="12-arts">Class 12 (Arts)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="previousSchool">Previous School</label>
+                        <input type="text" id="previousSchool" name="previousSchool">
+                    </div>
+
+                    <!-- Parent Information -->
+                    <h3 style="color: var(--primary-color); margin: 2rem 0 1.5rem; border-bottom: 2px solid var(--light-bg); padding-bottom: 0.5rem;">
+                        Parent/Guardian Information
+                    </h3>
+
+                    <div class="form-group">
+                        <label for="parentName">Parent/Guardian Name *</label>
+                        <input type="text" id="parentName" name="parentName" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contactNumber">Contact Number *</label>
+                        <input type="tel" id="contactNumber" name="contactNumber" pattern="[0-9]{10}" placeholder="10-digit mobile number" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="address">Address *</label>
+                        <textarea id="address" name="address" required></textarea>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="btn btn-primary" style="width: 100%; padding: 1rem; font-size: 1.1rem;">
+                        Submit Application
+                    </button>
+
+                    <p style="margin-top: 1rem; text-align: center; color: var(--light-text); font-size: 0.9rem;">
+                        * Required fields
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Modal -->
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Application Submitted Successfully! ✅</h3>
+                <span class="close-modal" id="closeSuccessModal">&times;</span>
+            </div>
+            <div class="modal-body" id="successModalBody">
+                <!-- Success message will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Rajib Gandhi Academy</h3>
+                <p>Providing quality education for classes 9-12 with a focus on holistic development and academic excellence.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="classes.html">Classes</a></li>
+                    <li><a href="admissions.html">Admissions</a></li>
+                    <li><a href="events.html">Events</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="notes.html">Study Notes</a></li>
+                    <li><a href="students.html">Student Portal</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p>📧 info@rajibgandhiacademy.edu</p>
+                <p>📞 +91 123-456-7890</p>
+                <p>📍 123 Education Street, City</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Rajib Gandhi Academy. All Rights Reserved. | Design by Abdul Azim</p>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
